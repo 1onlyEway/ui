@@ -1,0 +1,315 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffe600;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button {
+    border: none;
+    color: black; /* Text color black */
+    padding: 10px 20px; /* Adjusted padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Adjusted font size */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* Added border radius */
+    background-color: white; /* White background */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+  }
+
+  .button:hover {
+    background-color: #ffe600; /* Hover state yellow */
+    color: black; /* Text color black on hover */
+  }
+
+  .button.button1 {
+    background-color: rgb(23, 23, 23);
+    color: rgb(254, 254, 254);
+  }
+
+  .button.button2 {
+    background-color: rgb(23, 23, 23);
+    color: rgb(248, 248, 248);
+  }
+
+  .button.button3 {
+    background-color: rgb(21, 21, 21);
+    color: rgb(255, 255, 255);
+  }
+  .login-form {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  .login-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .login-form button {
+    background-color: #1e1e1e;
+    color: white;
+    font-size: 16px;
+  }
+
+  .login-form button:hover {
+    background-color: #020202;
+  }
+  .quantity-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjusted width */
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .quantity label {
+    font-size: 16px;
+  }
+
+  .quantity input {
+    width: 50px; /* Adjusted width */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .quantity button {
+    background-color: #0c0c0c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .quantity button:hover {
+    background-color: #ffe600;
+  }
+  .hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Your Font Name', sans-serif; /* Use your custom font */
+}
+
+.hero-text h1 {
+    font-size: 3em;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+}
+
+.hero-text h3 {
+    font-size: 1.5em;
+}
+
+.hero-text button {
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #0c0c0c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-text button:hover {
+    background-color: #ffe600;
+}
+
+.product-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #070707;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-button:hover {
+    background-color: #ffe600;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social-icons {
+    margin-top: 20px;
+}
+
+.footer-social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.footer-social-icons a:hover {
+    color: #ccc;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+    }
+    .footer-section {
+        flex: none;
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
